@@ -1,0 +1,123 @@
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    main {
+        flex: 1; /* This will allow the main content area to grow */
+    }
+    
+    footer {
+        background-color: #007bff;
+        color: #fff;
+        padding: 20px 0;
+        width: 100%;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 20px;
+    }
+    
+    .footer-section {
+        flex: 1;
+        min-width: 200px;
+        margin: 10px 0;
+    }
+    
+    .footer-section h4 {
+        margin-bottom: 15px;
+    }
+    
+    .footer-section p, .footer-section ul, .footer-section .socials {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .footer-section ul li {
+        margin-bottom: 10px;
+    }
+    
+    .footer-section ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .footer-section ul li a:hover {
+        color: #fff;
+    }
+    
+    .socials a {
+        display: inline-block;
+        margin-right: 10px;
+        color: #bbb;
+        text-decoration: none;
+    }
+    
+    .socials a:hover {
+        color: #fff;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+        padding: 10px 0;
+        border-top: 1px solid #444;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    </style>
+    
+    <body>
+        <main>
+            <!-- Your main content goes here -->
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Udaan is a platform that connects students and educators.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Posts</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="socials">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: support@uniblend.com</p>
+                    <p>Phone: +123 456 7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Udaan. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </body>
+    

@@ -1,0 +1,184 @@
+.job {
+    order: 1;  /* Default order is 0; setting to 1 keeps it first */
+    width: 70%;
+    padding-left: 20px;
+}
+
+/* Sidebar comes after the job section */
+.sidebar {
+    order: 2;  /* Sidebar comes second */
+    width: 25%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+       /* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the container to align sidebar and job section side by side */
+.container {
+    display: flex;  /* Flexbox layout */
+    justify-content: space-between;  /* Ensure space between sidebar and job section */
+    /* max-width: 1200px; */
+    /* margin: 20px auto;
+    padding: 20px; */
+    background-color: #fff;
+    border-radius: 8px;
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    gap: 20px;  Add some space between sidebar and job section */
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 25%;  /* Sidebar takes up 25% of the container width */
+    background-color: #ffffff;
+    margin: inherit;
+    padding: 20px;
+    /* border-radius: 12px; */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+/* Sidebar headings */
+.sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Sidebar list styling */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Sidebar list items */
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 600;
+    padding: 10px;
+    display: block;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Hover effect on sidebar links */
+.sidebar ul li a:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Additional space between sections */
+.sidebar h2 + ul {
+    margin-top: 20px;
+}
+
+/* Job Listings styles */
+.job {
+    width: 70%;  /* Job section takes up 70% of the container width */
+    padding-left: 20px;
+}
+
+.job h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Job item styles */
+.job-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.job-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* padding: 20px; */
+    display: flex;
+    align-items: center;
+}
+
+.job-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.job-details {
+    flex: 1;
+}
+
+.job-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.job-details p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.apply-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.apply-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.apply-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;  /* Stack sidebar and job section vertically on small screens */
+        padding: 10px;
+    }
+
+    .sidebar, .job {
+        width: 100%;  /* Both take full width on small screens */
+        padding-left: 0;
+    }
+
+    .job-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .job-item img {
+        margin-bottom: 15px;
+    }
+}

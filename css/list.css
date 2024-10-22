@@ -1,0 +1,133 @@
+
+
+.container5 {
+    
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.job-detail-box {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.image-section {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.company-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.details-section {
+    flex: 2;
+}
+
+.details-section h2 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.details-section p {
+    margin: 5px 0;
+}
+
+.buttons {
+    
+    margin-top: 20px;
+}
+
+.apply-button,
+.save-button {
+    display: inline-block;
+
+    margin: 10px;
+    padding: 10px;
+    
+    margin-right: 10px;
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-button {
+    background: blue;
+    margin: 10px;
+    padding: 10px;
+}
+
+.apply-button:hover {
+    background: darkgreen;
+}
+
+.save-button:hover {
+    background: darkblue;
+}
+
+
+/*  */
+/* -------------------------------------------------------- */
+.job-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.job-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.job-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.job-details {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.job-details h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.job-details p {
+    margin: 5px 0;
+}
+
+.details-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.details-button:hover {
+    background-color: #0056b3;
+}
